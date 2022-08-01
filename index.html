@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Etch-A-Sketch</title>
+    <script src="script.js" async></script>
+  </head>
+  <body>
+    <div class="right">
+      <div class="gridContainer"></div>
+    </div>
+    <div class="page">
+      <h1>ETCH-A-SKETCH</h1>
+      <label for="quantity">Type A Value For Grid Size:</label>
+      <input type="number" id="quantity" name="quantity" />
+      <button class="updateGrid" onclick="updateGrid()">Update Grid Size</button>
+      <button class="reset">RESET</button>
+      <div>
+        <input type="radio" id="color" name="fav_language" value="Select Color">
+        <input type="color" id="colorPicker" name="head"
+               value="#e66465">
+        <label for="head">Change Color</label>
+        <div class="explain">
+            <p>
+                Click on the radio button to change the color of your pencil.
+            </p>
+            <p>
+                Click in the canvas to start drawing and then move your mouse.
+            </p>
+            <p>
+                Click again in the canvas if you want to stop drawing.
+            </p>
+        </div>
+    </div>
+    </div>
+  </body>
+</html>
